@@ -1,0 +1,267 @@
+/*accordion new*/
+
+.ac-container{
+    width: 100%;
+    margin: 10px auto 30px auto;
+}
+
+.ac-container label{
+    font-family: DroidSans-Regular, Arial, sans-serif;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 20;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    line-height: 33px;
+    font-size: 22px;
+	    -webkit-box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
+	    -moz-box-shadow: 0px 1px 0px 0px rgba(255,255,255,1);
+    /*box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.16);*/
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.ac-container label:hover{
+    background: #0DA4A8;
+    color: #fff;
+}
+
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+    background: #0DA4A8;
+    color: #fff;
+    font-family: DroidSans-Regular, Arial, sans-serif;
+    box-shadow: none;
+}
+
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after{
+    content: '';
+    position: absolute;
+    right: 25px;
+    top: 5px;
+    background: transparent url(../img/icons/back-two.png);
+    background-size: contain;
+	width: 30px;
+	height: 29px;
+}
+
+.ac-container input:checked + label:hover:after{
+    background: transparent url(../img/icons/back.png);
+    background-size: contain;
+}
+
+.ac-container input{
+    display: none;
+}
+
+.ac-container article{
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    transition: 
+        height 0.3s ease-in-out, 
+        box-shadow 0.6s linear;
+    margin-bottom: 6px;
+}
+
+.ac-container article p{
+    font-style: italic;
+    color: #fff;
+    line-height: 28px;
+    font-size: 14px;
+    display: block;
+}
+
+.ac-container input:checked ~ article.ac-small{
+    height: 70px;
+}
+
+.ac-container input:checked ~ article.ac-medium{
+    height: 100px;
+}
+
+.ac-small p {
+	display: block;
+	float: left;
+}
+
+.accordion-form {
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	padding: 5px 0 0 5px;
+}
+
+.ac-text-box {
+	font-size: 18px;
+    color: #fff;
+    padding: 0 0 5px 5px;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+}
+
+.cost {
+	font-size: 20px;
+    font-weight: 400;
+	float: right;
+    padding-right: 12px;
+}
+
+.name-position {
+	font-size: 20px;
+    font-weight: 400;
+	display: block;
+	float: left;
+   
+}
+
+.desk {
+	display: block;
+	float: left;
+	color: #fff;
+	width: 80%;
+}
+
+.btn-buy {
+	background: #eee;
+	color: #252526;
+	float: right;
+	text-decoration: none;
+	display: block;
+	width: 70px;
+	text-align: center;
+	padding: 5px 5px;
+	transition: all 0.3s;
+	border: none;
+}
+
+.btn-buy:hover {
+    box-shadow:0px -5px 0 #456173 inset;
+} 
+
+/* Higher than 960 (desktop devices)
+====================================================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+	.name-position {
+	    font-size: 16px;
+	}
+
+	.cost {
+	    font-size: 16px; 
+	}
+
+	.desk {
+	    font-size: 13px;
+	    width: 80%; 
+	}
+
+	.btn-buy {
+		font-size: 13px;
+	    width: 60px;
+	}
+
+	.ac-container input:checked ~ article.ac-small {
+    	height: auto;; 
+	}
+
+}
+
+/* All Mobile Sizes (devices and browser)
+====================================================================== */
+@media only screen and (max-width: 767px) {
+
+	.ac-container label {
+		font-size: 18px;
+	}
+
+	.name-position {
+	    font-size: 14px;
+	}
+
+	.cost {
+	    font-size: 14px; 
+	}
+
+	.desk {
+	    font-size: 11px; 
+	    width: 80%;
+	}
+
+	.btn-buy {
+		font-size: 13px;
+	    width: 60px;
+	}
+
+	.ac-container input:checked ~ article.ac-small {
+    	height: auto;
+	}
+	
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers)
+====================================================================== */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	.ac-container label {
+		font-size: 18px;
+	}
+
+	.name-position {
+	    font-size: 14px;
+	}
+
+	.cost {
+	    font-size: 14px; 
+	}
+
+	.desk {
+	    font-size: 11px; 
+	    width: 80%;
+	}
+
+	.btn-buy {
+		font-size: 13px;
+	    width: 60px;
+	}
+
+	.ac-container input:checked ~ article.ac-small {
+    	height: auto;; 
+	}
+	
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
+=================================================================== */
+@media only screen and (max-width: 479px) {
+	
+	.ac-container label {
+		font-size: 16px;
+	}
+
+	.name-position {
+	    font-size: 12px;
+	}
+
+	.cost {
+	    font-size: 12px; 
+	}
+
+	.desk {
+	    font-size: 10px; 
+	    width: 70%;
+	}
+
+	.btn-buy {
+		font-size: 11px;
+	    width: 55px;
+	}
+
+	.ac-container input:checked ~ article.ac-small {
+    	height: auto;; 
+	}
+}

@@ -1,0 +1,149 @@
+/*Fancy box*/
+
+.fancybox-skin {
+    background: none;
+    border-radius: none; 
+}
+
+.fancybox-close {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 98040;
+}
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+    background-image: url('../img/fancybox_buttons.png');
+    background-position: 35px 0;
+}
+
+/*Fancy box*/
+
+/*Fancy box my style*/
+
+.fancybox-block {
+	overflow: hidden;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.project__list{
+	position: relative;
+    width: 275px;
+    height: 275px;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    margin: 0 0 5px 2px;
+    cursor: pointer;
+}
+
+.project__item{
+	text-align: center;
+    font-size: 0;
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.project__item:nth-child(4n+4) {
+	margin-right: 0;
+}
+
+
+.project__img {
+	overflow: hidden;
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.project__img img {
+	display: block;
+    height: 100%;
+    width: 100%;
+	vertical-align: top;
+	transition:transform .5s;
+
+
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(201, 201, 200, 0.7);
+	height:100%;
+	width: 100%;
+	top:0;
+	left:0;
+	opacity: 0;
+	transition:opacity .3s;
+	z-index: 2;
+}
+
+.project__item:hover .overlay {
+	opacity:1;
+}
+.project__item:hover .text__heading, 
+.project__item:hover .text__name {
+	transform:translate(0, 0);
+}
+
+.project__item:hover .project__img img {
+	transform:scale(1.5);
+}
+
+
+.project_text {
+	position: absolute;
+	top:50%;
+	width:100%;
+	text-align: center;
+	color:#fff;
+	font: 14px Arial, sans-serif;
+	margin-top: -8%;
+}
+
+.text__heading {
+	font-size: 25px;
+	transform: translate(0, -20px);
+	transition:transform .3s;
+	color: #000;
+}
+
+.text__name {
+	font-family: DroidSans-Regular, Arial, sans-serif;
+	margin-top: 16px;
+	transform: translate(0,20px);
+	transition:transform .3s;
+	color: #000;
+}
+
+/*Fancy box my style*/
+
+
+/* Tablet Portrait (devices and browsers)
+====================================================================== */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+	
+}
+
+/* All Mobile Sizes (devices and browser)
+====================================================================== */
+@media only screen and (max-width: 767px) {
+
+	
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
+=================================================================== */
+@media only screen and (max-width: 479px) {
+	
+		
+}	

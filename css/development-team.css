@@ -1,0 +1,443 @@
+/* development  team
+=================================================================== */
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    background: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}
+
+*, *:after, *:before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
+.wrapper {
+    padding: 30px 20px;
+    margin: 0px auto !important;
+    float: none;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.col-xs-4 {
+	width: 50%;
+	float: left;
+	padding: 10px;
+	text-align: center;
+}
+
+.color-dev {
+	background: rgb(230, 230, 230);
+	color: #252526;
+}
+
+.row {
+	margin-left: 0px;
+}
+
+.col-xs-4 h4 {
+	font-family: "Droid Sans";
+	font-size: 18px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post_data_dev {
+    font-family: "Droid Sans",Arial,sans-serif;
+    font-size: 13px;
+    color: #252526;
+    min-height: 30px;
+}
+
+
+.social-dev {
+	width: 150px;
+	padding: 0!important;
+	margin: 0 auto !important;
+	list-style-type: none!important;
+}
+
+.social-dev li{
+	float: left!important;
+	padding: 0px!important;
+	display: inline!important;
+	width: auto!important;
+	background: none;
+	margin-right: 5px;
+	margin-left: 35%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}			
+
+.social-dev li a {
+	background-color: #fff;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	display: block!important;
+	float: left!important;
+	margin: 1px!important;
+	padding: 0!important;
+	text-indent: -9999px!important;
+}
+
+.social-dev li a {
+	background-color:transparent;
+}
+
+.social-dev li.vk a {
+	background: url(../img/icons/social2/vk.png) no-repeat;
+	width: 40px;
+	height: 40px;
+	background-size: cover;
+}
+.social-dev li.vk a:hover {
+	transform: scale(1.2);
+    transition: 0.8s transform ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "DroidSans-Bold" !important;
+	font-weight: normal !important;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+
+/* Page Title
+=================================================================== */
+
+#page-dev {
+	margin: 30px 0px 0px 0px;
+}
+
+#page-title-dev:before {
+	content: "";
+    background: url(../img/slider_one/logo_main.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    top: 0%;
+    left: 45%;
+}
+
+#page-title-dev {
+	padding: 105px 40px 0px;
+}
+
+#page-dev h2 {
+	display: inline-block;
+	font-family: "DroidSans-Regular" !important;
+	color: #fff;
+	font-size: 36px;
+	letter-spacing: 3px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	position: relative;
+}
+
+#page-title-dev .dev-team-name {
+	display: inline-block;
+	font-family: "DroidSans-Regular" !important;
+	color: #080f19;
+	font-size: 36px;
+	letter-spacing: 3px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	position: relative;
+}
+
+
+
+#page-dev h2:before,
+#page-dev h2:after {
+    display: block;
+    height: 1px;
+    content: " ";
+    width: 29%;
+    position: absolute;
+    top: 0.53em;
+	z-index: 1;
+}
+
+#page-dev h2:before {
+	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    left: 0;
+}
+
+#page-dev h2:after {
+	background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */	
+   	right: 0;  
+   	left: auto; 
+}
+
+#page-dev .dev-team-name:before {
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    left: 0;
+}
+
+#page-dev .dev-team-name:after {
+	background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */	
+   	right: 0;  
+   	left: auto; 
+}
+
+#page-dev h2 span {
+	padding: 0px 10px;
+	position: relative;
+	z-index: 2;
+}
+
+/* Higher than 960 (desktop devices)
+====================================================================== */
+@media (min-width: 1200px) {
+	
+	
+
+}
+
+/* Higher than 960 (desktop devices)
+====================================================================== */
+@media only screen and (min-width: 980px) and (max-width: 1199px){
+	
+	#page-title-dev .dev-team-name {
+	    font-size: 29px;
+	}
+
+	#page-title-dev {
+	    padding: 65px 40px 15px;
+	}
+
+	#page-dev .dev-team-name:before {
+    	top: 18px;
+    }
+	
+	#page-dev .dev-team-name:after {
+    	top: 18px;
+    }
+
+}
+
+/* Tablet Portrait (devices and browsers)
+====================================================================== */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+	#page-title-dev .dev-team-name {
+	    font-size: 20px;
+	}
+
+	#page-title-dev {
+	    padding: 180px 40px 15px;
+	}
+
+	#page-dev .dev-team-name:before {
+    	top: 18px;
+    }
+	
+	#page-dev .dev-team-name:after {
+    	top: 18px;
+    }
+
+	.col-xs-4 h4 {
+	    font-size: 15px;
+	}
+
+	#page-title-dev:before {
+	    content: "";
+	    width: 22%;
+	    height: 25%;
+	    top: 30px;
+	    left: 38%;
+	}
+
+
+}
+
+/* All Mobile Sizes (devices and browser)
+====================================================================== */
+@media only screen and (max-width: 767px) {
+
+	#page-dev .dev-team-name:before {
+    	display: none;
+    }
+	
+	#page-dev .dev-team-name:after {
+    	display: none;
+    }
+
+    #page-title-dev .dev-team-name {
+	    font-size: 20px;
+	}
+
+	#page-title-dev {
+	    padding: 140px 40px 15px;
+	}
+
+	.col-xs-4 h4 {
+	    font-size: 11px;
+	    margin-top: 0;
+	}
+
+	.post_data_dev {
+	    font-size: 11px;
+	    min-height: 10px;
+	}
+
+	#page-title-dev:before {
+	    content: "";
+	    width: 23%;
+	    height: 15%;
+	    top: 30px;
+	    left: 38%;
+	}
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers)
+====================================================================== */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	#page-dev .dev-team-name:before {
+    	display: none;
+    }
+	
+	#page-dev .dev-team-name:after {
+    	display: none;
+    }
+
+    #page-title-dev .dev-team-name {
+	    font-size: 20px;
+	}
+
+	#page-title-dev {
+	    padding: 140px 0px 15px;
+	}
+
+	.col-xs-4 h4 {
+	    font-size: 11px;
+	    margin-top: 0;
+	}
+
+	.col-xs-4 {
+	    text-align: center;
+	}
+
+	.post_data_dev {
+	    font-size: 11px;
+	    min-height: 10px;
+	}
+
+	.wrapper {
+    	padding: 30px 0px;
+	}
+
+	#page-title-dev:before {
+	    content: "";
+	    width: 23%;
+	    height: 15%;
+	    top: 30px;
+	    left: 42%;
+	}
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
+=================================================================== */
+@media only screen and (max-width: 479px) {
+
+	#page-dev .dev-team-name:before {
+    	display: none;
+    }
+	
+	#page-dev .dev-team-name:after {
+    	display: none;
+    }
+
+    #page-title-dev .dev-team-name {
+	    font-size: 20px;
+	}
+
+	#page-title-dev {
+	    padding: 120px 0px 15px;
+	}
+
+	.col-xs-4 h4 {
+	    font-size: 11px;
+	    margin-top: 0;
+	}
+
+	.col-xs-4 {
+	    text-align: center;
+	}
+
+	.post_data_dev {
+	    font-size: 11px;
+	    min-height: 10px;
+	}
+
+	.col-xs-4 {
+	    width: 100%;
+	    float: left;
+	    padding: 10px;
+	    text-align: center;
+	}
+
+	.wrapper {
+    	padding: 30px 0px;
+	}
+
+	#page-title-dev:before {
+	    content: "";
+	    width: 30%;
+	    height: 15%;
+	    top: 30px;
+	    left: 38%;
+	}
+
+}
